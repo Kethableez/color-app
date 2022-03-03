@@ -1,0 +1,6 @@
+<div class="box" *ngIf="color">
+  <div class="style" [ngStyle]="{'background-color': color.hexValue}"></div>
+  <div class="colorName">
+    {{ color.displayValue }}
+  </div>
+</div>

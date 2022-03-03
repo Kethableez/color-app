@@ -1,0 +1,4 @@
+<form [formGroup]="colorForm">
+  <input type="text" formControlName="color" placeholder="Color value in HEX">
+  <button [disabled]="!colorForm.valid" (click)="onSubmit()">Submit</button>
+</form>

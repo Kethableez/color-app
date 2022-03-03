@@ -1,0 +1,18 @@
+<form [formGroup]="filters">
+  <div class="checkbox">
+    <input type="checkbox" formControlName="red" (change)="applyFilters()">
+    <label>Red > 50%</label>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" formControlName="green" (change)="applyFilters()">
+    <label>Green > 50%</label>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" formControlName="blue" (change)="applyFilters()">
+    <label>Blue > 50%</label>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" formControlName="saturation" (change)="applyFilters()">
+    <label>Saturation > 50%</label>
+  </div>
+</form>
